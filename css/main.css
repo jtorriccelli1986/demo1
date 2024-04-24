@@ -1,0 +1,275 @@
+*{
+    box-sizing: border-box;
+    
+}
+a, a:hover{
+    text-decoration: none;
+    color: inherit;
+}
+.container{
+
+}
+.head-content{
+    text-align: center;
+    background: rgb(200,9,17);
+background: linear-gradient(145deg, rgba(200,9,17,1) 0%, rgba(88,6,11,1) 55%, rgba(141,8,15,1) 100%);
+padding-top: 25px;
+padding-bottom: 25px;
+}
+
+.info{
+    width: 620px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.info-terminos{
+    font-size: 8px;
+    line-height: 1.1;
+    color: white;
+    font-family: arial;
+}
+.ico1 img{
+    width: 480px;
+}
+.ico2{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+.ico2 img{
+    width: 350px;
+}
+.ico3{
+    margin-bottom: 20px;
+}
+.ico4{
+    margin-bottom: 20px;
+}
+.lyt-content{
+    display: flex;
+    min-height: 100vh;
+
+}
+
+.bloque-left{
+width: 50%;
+/*background-color:#65050d;*/
+background: rgb(200,9,17);
+background: linear-gradient(145deg, rgba(200,9,17,1) 0%, rgba(88,6,11,1) 55%, rgba(141,8,15,1) 100%);
+padding-top: 30px;
+padding-bottom: 30px;
+}
+.bloque-left .info{
+    float: right;
+    padding-right: 100px;
+}
+.bloque-right{
+    width: 50%;
+  
+    display: flex;
+    flex-direction: column;
+    padding-top: 80px;
+}
+
+.bloque-right .info-bloque{
+float: left;
+padding-left: 100px;
+width: 590px;
+color: black;
+}
+
+.info-bloque{
+    font-family: arial;
+}
+
+.info-bloque h2{
+    font-size: 30px;
+  
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 1.3;
+}
+
+.info-bloque label{
+ 
+ font-size:20px;
+ margin-bottom: 10px;
+ display: block;
+}
+.info-bloque .field-100{
+width: 100%;
+margin-bottom: 15px;
+}
+.info-bloque .field-50{
+    width: 48%;
+    margin-bottom: 15px
+}
+.info-bloque  input{
+    border: 0px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ebebeb;
+}
+.info-bloque .field-100 input,
+.info-bloque .field-50 input{
+    width: 100%;
+    font-size: 18px;
+    
+}
+.info-bloque .field-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.field-btn{
+    text-align: center;
+    margin-top:30px
+
+}
+.btn-enviar{
+    background-color: #8d080f;
+    padding: 10px 50px;
+    color: white;
+    border: 0px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.modal-mensaje{
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top:0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.form-mensaje{
+    width: 870px;
+    /*min-height:400px;*/
+    background-color: white;
+}
+.form-mensaje textarea{
+    width: 100%;
+    font-family: arial;
+    padding: 10px;
+}
+.marco-mensaje{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-mensaje{
+ padding:70px 100px;
+    background: rgb(200,9,17);
+    background: linear-gradient(145deg, rgba(200,9,17,1) 0%, rgba(88,6,11,1) 55%, rgba(141,8,15,1) 100%);
+font-family: arial;
+}
+.form-mensaje .titulo{
+    color: white;
+    font-size: 18px;
+    display: block;
+    margin-bottom: 10px;
+}
+.form-mensaje .titulo-detalle{
+    color: white;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 10px;
+}
+.marco-btn-enviar-mensaje{
+text-align: center;
+margin-top: 40px;
+
+}
+.form-mensaje{
+ position: relative;
+   
+   
+}
+.close-mensaje{
+    position: absolute;
+    right: -20px;
+    top: -20px;
+    background-color: black;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.btn-enviar-mensaje{
+    background-color: white;
+    color: #8d080f;
+    border: 0px;
+    font-size: 16px;
+    padding: 10px 50px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    }
+    .lyt-content-gracias{
+        background-image: url(../img/fondo.png);
+        background-size: cover;
+        height: 100vh;
+    }
+
+    .mensaje-gracias{
+        width: 500px;
+        margin:0 auto;
+        color: white;
+        text-align: center;
+        padding-top: 150px;
+        font-family: arial;
+    }
+
+    .mensaje-gracias-1{
+        font-size: 35px;
+        font-weight: bold;
+        text-transform: uppercase;
+        line-height: 1.4;
+    }
+    .mensaje-gracias-2{
+        font-size: 25px;
+        line-height: 1.4;
+    
+    }
+    .mensaje-gracias-2 .bold{
+        font-weight: bold;
+    }
+
+    .line-white{
+        width: 400px;
+        height: 1px;
+        background-color: white;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        display: inline-block;
+    }
+
+    .termino-gracias{
+        width: 900px;
+        margin: 40px auto;
+        text-align: center;
+        
+    }
+    .btn-gracias{
+        text-align: center;
+        margin-top: 60px;
+    }
+    .btn-gracias a{
+        background-color: white;
+        border-radius: 5px;
+        font-weight: bold;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-family: arial;
+        color:#8d080f;
+    }

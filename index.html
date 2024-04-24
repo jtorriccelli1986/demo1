@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div>
+        <div class="container">
+            <div class="head-content">
+                <img src="img/textoch.png" alt="">
+            </div>
+            <div class="lyt-content">
+                <div class="bloque-left">
+                    <div class="info">
+                        <div class="ico1">
+                            <img src="img/texto.png" alt="">
+                        </div>
+                        <div class="ico2">
+                            <img src="img/texto2.png" alt="">
+
+                        </div>
+                        <div class="ico3">
+                            <img src="img/texto0.png" alt="">
+
+                        </div>
+                        <div class="ico4">
+                            <img src="img/texto3.png" alt="">
+
+                        </div>
+                       <div>
+                        <span class="info-terminos">El mensaje puede ser enviado por cualquier persona desde el enlace de la NASA, disponible en https://www3.nasa.gov/send-your-name-with-artemis/#user-information, 
+                            sin necesidad de adquirir el producto. El anunciante no tiene ningún tipo de vínculo con la NASA, su único rol es de facilitar el llenado del formulario provisto por la NASA. 
+                            La promoción estará vigente hasta el 11 de mayo del 2024. RUC: 20419323170 Razón Social: PUIG PERU S.A.</span>
+                       </div>
+                        
+                    </div>
+                </div>
+                <div class="bloque-right">
+                   <div class="info-bloque">
+                    <div>
+                        <h2>Ingresa tus datos y déjale un mensaje a mamá en su día</h2>
+                    </div>
+                    <form action="">
+                        <div class="field-100">
+                            <label for="">Nombre *</label>
+                            <div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="field-100">
+                            <label for="">Apellidos *</label>
+                            <div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="field-row">
+                            <div class="field-50">
+                                <label for="">N° Documento</label>
+                                <div>
+                                    <input type="text">
+                                </div>
+                            </div>
+                            <div class="field-50">
+                                <label for="">N° Teléfono *</label>
+                                <div>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="field-row">
+                            <div class="field-50">
+                                <label for="">Fecha Nacimiento </label>
+                                <div>
+                                    <input type="date">
+                                </div>
+                            </div>
+    
+                            <div class="field-50">
+                                <label for="">Mi correo electrónico</label>
+                                <div>
+                                    <input type="text">
+                                </div>
+                            </div>
+                        </div>
+                      
+                        <div class="field-100">
+                            <label for="">Correo electrónico de mamá es *</label>
+                            <div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="field-100">
+                            <label for="">N° de teléfono de mamá es *</label>
+                            <div>
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div>
+                            
+                            <label for=""><input type="checkbox"> Acepto los términos y condiciones</label>
+                        </div>
+                        <div class="field-btn">
+                            <button class="btn-enviar" type="button">Escribe un mensaje para mamá</button>
+                        </div>
+                    </form>
+                   </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="modal-mensaje">
+        <div class="marco-mensaje">
+           <div class="form-mensaje">
+            <span class="close-mensaje">X</span>
+            <form action="">
+                <div>
+                    <span class="titulo">Escribe tu mensaje para mamá</span>
+                    <br>
+                    <span class="titulo-detalle">*Mensaje de hasta 32 caracteres</span>
+                </div>
+                <textarea name="" id="inp-mensaje" cols="30" rows="10"></textarea>
+                <div class="marco-btn-enviar-mensaje">
+                    <button class="btn-enviar-mensaje" type="button">Enviar mensje al espacio</button>
+                </div>
+            </form>
+           </div>
+            
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        $(".btn-enviar").click(function(){
+            $(".modal-mensaje").fadeIn();  
+        })
+
+        $(".btn-enviar-mensaje").click(function(){
+           let mensaje= $("#inp-mensaje").val();
+           if(mensaje.length==0){
+            console.log("error")
+           }else{
+            window.location="gracias.html"
+           }
+
+        })
+    </script>
+</body>
+</html>
